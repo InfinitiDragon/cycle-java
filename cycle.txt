@@ -1,0 +1,24 @@
+public class Main {
+    public static void main(String[] args) {
+
+                int sumNegative = 0;
+                int sumPositive = 0;
+                int sumMultipleOfNine = 0;
+
+                for (int i = -50; i <= 50; i++) {
+                    if (i < 0) {
+                        sumNegative += i;
+                    } else if (i > 0) {
+                        sumPositive += i;
+                    }
+
+                    if (i % 9 == 0) {
+                        sumMultipleOfNine += i;
+                    }
+                }
+
+                System.out.println("Сума від'ємних чисел: " + sumNegative);
+                System.out.println("Сума додатніх чисел: " + sumPositive);
+                System.out.println("Сума кратних 9: " + sumMultipleOfNine);
+            }
+        }
